@@ -9,6 +9,7 @@ module Devise
       end
 
       def new
+        binding.pry
         respond *authorize_endpoint.call(request.env)
       end
 
